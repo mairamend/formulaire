@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulaire de don de sang </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+       <div class="page">
+        <div class="head">
+            
+                <h1> Formulaire de don de sang</h1>
+                <p>Un don , une vie sauvee</p>
+             
+        </div>
+        <div class="main">
+           <div class="form">
+            <form action="">
+                <div class="infoperso">
+                    <h2>Enter your information personal</h2>
+                    <label for="fulllname">Name:</label>
+                    <input type="text" id="fulllname" placeholder="Enter your fulllname" aria-labelledby="name-label"required>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" aria-labelledby="email" placeholder="Enter your mail"required>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" min="18" placeholder="Enter your age"required  >
+                    
+                    <label for="sexe">Gender:</label>
+                    <select name="sex" id="sexe"required>
+                        <option value="" disabled selected>Enter your Gender</option>
+                        <option value="w">Woman</option>
+                        <option value="m">Man</option>
+                    </select>
+                    <label for="poids">Weight:</label>
+                    <input type="number" id="poids" placeholder="Enter your Weight"required min="55"  >
+                    <label for="bloodgroup">Blood group:</label>
+                    <select name="blood-group" id="bloodgroup" required>
+                        
+                        <option value="" disabled selected>Enter your blood group</option>
+                        <option value="a+">A+</option>
+                        <option value="b">B+</option>
+                        <option value="ab">AB+</option>
+                        <option value="o">O+</option>
+                        <option value="a-" >A-</option>
+                        <option value="b-">B-</option>
+                        <option value="ab-">AB-</option>
+                        <option value="o-">O-</option>
+                    </select>
+                </div>
+                <div class="health">
+                    <h2>Have you or had any of the following illnesses?</h2>
+                   <p>Avez vous ete malade les quatres derniers mois</p>
+                  <div class="preciser">
+                    <label >
+                        <input type="radio" name="maladie" value="oui">Oui
+                        <input type="radio" name="maladie" value="non">Non
+                      </label>
+                  </div>
+                    <label for="desease">Si oui la quelle</label>
+                   <input type="text" id="desease" name="desease" placeholder="Entrer les maladies">
+                   <p>Avez vous pris ou prenez des medicaments meme une  aspirine</p> 
+                  <div class="preciser">
+                    <label ></label>
+                    <input type="radio" name="medicaments"value="oui" >Oui
+                    <input type="radio" name="medicaments"value="non">Non
+                  </label>
+                  </div>
+                  <div class="preciser">
+                    <label for="medicament">Si oui lesquels</label>
+                    <input type="text" name="medicaments" id="medicament" required placeholder="preciserles medicaments">
+                  </div>
+                   <p>Avez vous sejourne hors du pays les quatres derniers mois </p>
+                   <label ></label>
+                    <input type="radio" name="pays"value="oui">Oui
+                    <input type="radio" name="pays" value="non">Non
+                  </label>
+                   <div class="preciser">
+                    <label for="pays" >Si oui preciser le pays</label>
+                   <input type="text" id="pays" name="pays" required placeholder="preciser le ou les pays">
+                   </div>
+                   <p>Avez vous fait une chirurgie</p>
+                   <label ></label>
+                    <input type="radio" name="chirurgie" value="oui">Oui
+                    <input type="radio" name="chirurgie" value="non">Non
+                  </label>
+                </div>
+                <div class="women">
+                    <h2>Ne concerne que les femmes</h2>
+                    <p>Avez vous vos regles</p>
+                    <label >
+                        <input type="radio" name="regles"value="oui" >Oui
+                        <input type="radio" name="regles" value="non">Non
+                      </label>
+                      <p>Etes vous en etat de grossesses ou en allaitement</p>
+                      <label >
+                        <input type="radio" name="etat" value="oui">Oui
+                        <input type="radio" name="etat" value="non">Non
+                      </label>
+                </div>
+                <div class="consentement">
+                   <fieldset>
+                   <legend> Consentez vous pour le don</legend>
+                   
+                        <input type="radio" name="consentement-don" value="oui" id="oui-don"><label for="oui-don">Oui</label>
+                        <input type="radio" name="consentement-don" value="non" id="non-don" ><label for="non-don">Non</label>
+                      
+                   </fieldset>
+                      <fieldset>
+                       <legend> Consentez vous pour les tests de VIH/Hepatite/siphilus etc..</legend>
+                      <label >
+                        <input type="radio" name="consentement-test" id="oui-tests" value="oui" ><label for="oui-tests">Oui</label>
+                        <input type="radio" name="consentement-test" id="non-tests" value="non"><label for="non-tests">Non</label>
+                      </label>
+                      </fieldset>
+                     <fieldset>
+                        <legend>Consentez vous a etre mis au courant si les test sont positifs</legend>
+                        <label >
+                          <input type="radio" name="aucourant" value="oui" id="oui-aucourant" ><label for="oui-aucourant">Oui</label>
+                          <input type="radio" name="aucourant" value="non" id="non-aucourant"><label for="non-aucourant">Non</label>
+                        </label>
+                     </fieldset>
+                </div>
+                <div class="urgence">
+                    <h2>Qui contacter en cas d'urgence</h2>
+                    <label for="conturgent">Telephone</label>
+                    <input type="tel" id="conturgent" required>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" required>
+                </div>
+                <div class="button">
+                    <button type="submit">Soumettre</button>
+                </div>
+            </form>
+           </div> 
+        </div>
+       </div>
+    </body>
+</html>
